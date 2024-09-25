@@ -11,8 +11,10 @@ public class DogController {
         return "Wuffi";
     }
 
-
-
+    @GetMapping("/story")
+    public String getStory(){
+        return "Wuffi likes his Owner";
+    }
 
     @PostMapping
     public String createStory(@RequestBody String story){
