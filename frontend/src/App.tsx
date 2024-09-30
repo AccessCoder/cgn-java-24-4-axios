@@ -2,6 +2,7 @@
 import './App.css'
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {Button} from "@mui/material";
 
 function App() {
   const [name, setName] = useState<string>("")
@@ -29,6 +30,7 @@ function App() {
   return (
     <>
         <h2>My Dog: {name}, this is his Story: {story}</h2>
+      <Button variant={"outlined"}>Test</Button>
     </>
   )
 }
